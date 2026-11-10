@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - App Bazaar Platform</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#2563eb',
+                            600: '#1d4ed8',
+                            700: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Top Navigation Header -->
+    <header class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 transition-all duration-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-brand-600 to-indigo-500 text-white p-2.5 rounded-xl shadow-md shadow-brand-500/20">
+                    <i class="fa-solid fa-[#10b981] fa-store text-lg"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-slate-900 text-lg tracking-tight block leading-tight">App Bazaar</span>
+                    <span class="text-xs text-slate-500 font-medium tracking-wide">DEVELOPER PLATFORM</span>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-2 sm:space-x-4">
+                <button onclick="window.print()" class="inline-flex items-center space-x-2 text-xs sm:text-sm font-medium text-slate-600 hover:text-brand-600 bg-slate-100 hover:bg-brand-50 px-3 py-2 rounded-lg transition-colors duration-150">
+                    <i class="fa-solid fa-print"></i>
+                    <span class="hidden sm:inline">Print</span>
+                </button>
+                <button id="copyLinkBtn" onclick="copyPageUrl()" class="inline-flex items-center space-x-2 text-xs sm:text-sm font-medium text-slate-600 hover:text-brand-600 bg-slate-100 hover:bg-brand-50 px-3 py-2 rounded-lg transition-colors duration-150">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <span class="hidden sm:inline">Share</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 flex-grow w-full">
+        
+        <!-- Privacy Policy Card Container -->
+        <article class="bg-white rounded-2xl shadow-xl shadow-slate-200/60 border border-slate-200/80 overflow-hidden">
+            
+            <!-- Hero Header inside card -->
+            <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-brand-900 text-white p-6 sm:p-10 relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl font-bold select-none pointer-events-none">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                
+                <div class="relative z-10 max-w-2xl">
+                    <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-xs sm:text-sm text-brand-100 mb-4 border border-white/10">
+                        <i class="fa-regular fa-calendar-check text-brand-500"></i>
+                        <span>Effective Date: <strong>November 11, 2026</strong></span>
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-3">
+                        Privacy Policy
+                    </h1>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Welcome to our App Bazaar Platform. We are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="p-6 sm:p-10 space-y-8">
+
+                <!-- Quick Navigation Bar -->
+                <nav class="p-4 bg-slate-50 rounded-xl border border-slate-200/60">
+                    <h2 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Quick Navigation</h2>
+                    <div class="flex flex-wrap gap-2 text-xs sm:text-sm">
+                        <a href="#section-1" class="px-3 py-1.5 bg-white hover:bg-brand-50 text-slate-700 hover:text-brand-600 rounded-lg border border-slate-200 shadow-sm transition-all">1. Info Collected</a>
+                        <a href="#section-2" class="px-3 py-1.5 bg-white hover:bg-brand-50 text-slate-700 hover:text-brand-600 rounded-lg border border-slate-200 shadow-sm transition-all">2. Use of Data</a>
+                        <a href="#section-3" class="px-3 py-1.5 bg-white hover:bg-brand-50 text-slate-700 hover:text-brand-600 rounded-lg border border-slate-200 shadow-sm transition-all">3. Firebase</a>
+                        <a href="#section-4" class="px-3 py-1.5 bg-white hover:bg-brand-50 text-slate-700 hover:text-brand-600 rounded-lg border border-slate-200 shadow-sm transition-all">4. Security</a>
+                        <a href="#section-5" class="px-3 py-1.5 bg-white hover:bg-brand-50 text-slate-700 hover:text-brand-600 rounded-lg border border-slate-200 shadow-sm transition-all">5. External Links</a>
+                        <a href="#section-6" class="px-3 py-1.5 bg-white hover:bg-brand-50 text-slate-700 hover:text-brand-600 rounded-lg border border-slate-200 shadow-sm transition-all">6. Policy Changes</a>
+                        <a href="#section-7" class="px-3 py-1.5 bg-white hover:bg-brand-50 text-slate-700 hover:text-brand-600 rounded-lg border border-slate-200 shadow-sm transition-all">7. Contact Us</a>
+                    </div>
+                </nav>
+
+                <!-- Preamble / Introduction -->
+                <div class="prose prose-slate max-w-none text-slate-600 text-sm sm:text-base leading-relaxed border-l-4 border-brand-500 pl-4 py-1">
+                    <p>
+                        This Privacy Policy explains how we collect, use, and share your information when you use our mobile application and developer platform. By using our app, you agree to the collection and use of information in accordance with this policy.
+                    </p>
+                </div>
+
+                <hr class="border-slate-100">
+
+                <!-- Section 1 -->
+                <section id="section-1" class="scroll-mt-24">
+                    <div class="flex items-start space-x-3 mb-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-sm border border-brand-100">1</span>
+                        <h2 class="text-xl font-bold text-slate-900 pt-0.5">Information We Collect</h2>
+                    </div>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4 pl-11">
+                        We collect several different types of information for various purposes to provide and improve our service to you:
+                    </p>
+                    <div class="pl-11 grid gap-3">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/70 hover:border-brand-200 transition-colors">
+                            <h3 class="font-semibold text-slate-900 text-sm sm:text-base flex items-center">
+                                <i class="fa-solid fa-user text-brand-500 mr-2 text-sm"></i> Personal Data
+                            </h3>
+                            <p class="text-slate-600 text-xs sm:text-sm mt-1 leading-relaxed">
+                                When you register an account, we may ask you to provide certain personally identifiable information, such as your name, email address, and developer name.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/70 hover:border-brand-200 transition-colors">
+                            <h3 class="font-semibold text-slate-900 text-sm sm:text-base flex items-center">
+                                <i class="fa-solid fa-box-archive text-brand-500 mr-2 text-sm"></i> App Content Data
+                            </h3>
+                            <p class="text-slate-600 text-xs sm:text-sm mt-1 leading-relaxed">
+                                Information you upload, such as application APK files, icons, screenshots, descriptions, version numbers, and package names.
+                            </p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/70 hover:border-brand-200 transition-colors">
+                            <h3 class="font-semibold text-slate-900 text-sm sm:text-base flex items-center">
+                                <i class="fa-solid fa-chart-line text-brand-500 mr-2 text-sm"></i> Usage Data
+                            </h3>
+                            <p class="text-slate-600 text-xs sm:text-sm mt-1 leading-relaxed">
+                                Information on how the application is accessed and used, including device information, IP address, browser type, and interaction with apps and banners.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="border-slate-100">
+
+                <!-- Section 2 -->
+                <section id="section-2" class="scroll-mt-24">
+                    <div class="flex items-start space-x-3 mb-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-sm border border-brand-100">2</span>
+                        <h2 class="text-xl font-bold text-slate-900 pt-0.5">Use of Data</h2>
+                    </div>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4 pl-11">
+                        We use the collected data for various operational and service improvement purposes:
+                    </p>
+                    <ul class="pl-11 space-y-2.5">
+                        <li class="flex items-start text-slate-600 text-sm sm:text-base">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 mr-3 text-sm flex-shrink-0"></i>
+                            <span>To provide, maintain, and improve our Play Store and Developer platform.</span>
+                        </li>
+                        <li class="flex items-start text-slate-600 text-sm sm:text-base">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 mr-3 text-sm flex-shrink-0"></i>
+                            <span>To manage user accounts and authenticate developers securely.</span>
+                        </li>
+                        <li class="flex items-start text-slate-600 text-sm sm:text-base">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 mr-3 text-sm flex-shrink-0"></i>
+                            <span>To review, test, approve, or reject uploaded applications.</span>
+                        </li>
+                        <li class="flex items-start text-slate-600 text-sm sm:text-base">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 mr-3 text-sm flex-shrink-0"></i>
+                            <span>To notify you about changes to our service or application status (such as approvals or rejections).</span>
+                        </li>
+                        <li class="flex items-start text-slate-600 text-sm sm:text-base">
+                            <i class="fa-solid fa-circle-check text-emerald-500 mt-1 mr-3 text-sm flex-shrink-0"></i>
+                            <span>To monitor the usage of the platform and prevent fraudulent activities.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <hr class="border-slate-100">
+
+                <!-- Section 3 -->
+                <section id="section-3" class="scroll-mt-24">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-sm border border-brand-100">3</span>
+                        <h2 class="text-xl font-bold text-slate-900 pt-0.5">Firebase Services</h2>
+                    </div>
+                    <div class="pl-11">
+                        <div class="p-4 rounded-xl bg-amber-50/50 border border-amber-200/60 text-slate-600 text-sm sm:text-base leading-relaxed">
+                            <div class="flex items-center space-x-2 text-amber-800 font-semibold mb-1">
+                                <i class="fa-solid fa-fire text-amber-500"></i>
+                                <span>Third-Party Infrastructure</span>
+                            </div>
+                            Our application uses <strong>Firebase (provided by Google)</strong> for authentication, database management, and hosting services. Firebase may collect data as outlined in Google's Privacy Policy to ensure secure login sessions and real-time data synchronization.
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="border-slate-100">
+
+                <!-- Section 4 -->
+                <section id="section-4" class="scroll-mt-24">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-sm border border-brand-100">4</span>
+                        <h2 class="text-xl font-bold text-slate-900 pt-0.5">Security of Data</h2>
+                    </div>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed pl-11">
+                        The security of your data is important to us. While we strive to use commercially acceptable means to protect your personal information and uploaded applications, remember that no method of transmission over the Internet or electronic storage is 100% secure.
+                    </p>
+                </section>
+
+                <hr class="border-slate-100">
+
+                <!-- Section 5 -->
+                <section id="section-5" class="scroll-mt-24">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-sm border border-brand-100">5</span>
+                        <h2 class="text-xl font-bold text-slate-900 pt-0.5">Links to Other Sites</h2>
+                    </div>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed pl-11">
+                        Our service may contain links to other sites that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.
+                    </p>
+                </section>
+
+                <hr class="border-slate-100">
+
+                <!-- Section 6 -->
+                <section id="section-6" class="scroll-mt-24">
+                    <div class="flex items-start space-x-3 mb-3">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-sm border border-brand-100">6</span>
+                        <h2 class="text-xl font-bold text-slate-900 pt-0.5">Changes to This Privacy Policy</h2>
+                    </div>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed pl-11">
+                        We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top of this policy.
+                    </p>
+                </section>
+
+                <hr class="border-slate-100">
+
+                <!-- Section 7 (Contact Us - Highlighted Box) -->
+                <section id="section-7" class="scroll-mt-24">
+                    <div class="bg-gradient-to-br from-brand-50 to-indigo-50 border border-brand-200/80 rounded-2xl p-6 sm:p-8">
+                        <div class="flex items-start space-x-3 mb-3">
+                            <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-600 text-white flex items-center justify-center font-bold text-sm shadow-sm">7</span>
+                            <h2 class="text-xl font-bold text-slate-900 pt-0.5">Contact Us</h2>
+                        </div>
+                        
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed pl-11 mb-6">
+                            If you have any questions, concerns, or requests regarding this Privacy Policy, please reach out to our team through our official support channel:
+                        </p>
+                        
+                        <div class="pl-11">
+                            <div class="inline-flex flex-col sm:flex-row sm:items-center bg-white p-4 rounded-xl border border-brand-200 shadow-sm max-w-full">
+                                <div class="flex items-center space-x-3 mb-3 sm:mb-0 sm:mr-6">
+                                    <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center text-lg flex-shrink-0">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-xs font-semibold uppercase text-slate-400 block tracking-wider">Support Email</span>
+                                        <a href="mailto:appbazaar24@gmail.com" class="text-brand-600 font-semibold hover:underline text-base sm:text-lg break-all">
+                                            appbazaar24@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                                <button onclick="copyEmail('appbazaar24@gmail.com')" class="sm:ml-auto inline-flex items-center justify-center space-x-2 bg-brand-600 hover:bg-brand-700 text-white text-xs sm:text-sm font-medium px-4 py-2.5 rounded-lg transition-colors shadow-sm active:scale-95">
+                                    <i class="fa-solid fa-copy"></i>
+                                    <span>Copy Email</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Card Footer -->
+            <div class="bg-slate-50 border-t border-slate-200/80 px-6 sm:px-10 py-5 text-center text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
+                <span>&copy; 2026 App Bazaar Platform. All rights reserved.</span>
+                <span>Protected by Standard Developer Terms</span>
+            </div>
+
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-6 text-center text-slate-400 text-xs">
+        <div class="max-w-4xl mx-auto px-4">
+            <p>App Bazaar Platform Developer Center</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Component for Copying Actions -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-slate-900 text-white text-sm px-4 py-3 rounded-xl shadow-2xl flex items-center space-x-3 transform translate-y-20 opacity-0 transition-all duration-300 z-50 pointer-events-none">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span id="toastMsg">Copied to clipboard!</span>
+    </div>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Fallback-safe clipboard copy function
+        function copyToClipboard(text, message) {
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(() => {
+                    showToast(message);
+                }).catch(() => {
+                    fallbackCopy(text, message);
+                });
+            } else {
+                fallbackCopy(text, message);
+            }
+        }
+
+        function fallbackCopy(text, message) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            textArea.style.left = "-999999px";
+            textArea.style.top = "-999999px";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                showToast(message);
+            } catch (err) {
+                showToast("Failed to copy text.");
+            }
+            document.body.removeChild(textArea);
+        }
+
+        function copyEmail(email) {
+            copyToClipboard(email, "Support email copied to clipboard!");
+        }
+
+        function copyPageUrl() {
+            copyToClipboard(window.location.href, "Page link copied to clipboard!");
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            toastMsg.textContent = msg;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
